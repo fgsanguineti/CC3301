@@ -6,13 +6,15 @@ typedef int (*BoolFun)(int x[]);
 typedef struct {
     BoolFun f;
     int *array_pointer;
-    int *res;
+    int res;
     int n;
 } Args;
 
-void gen(int *x, int i, int n, BoolFun f, int *res) {
+void gen(int *x, int i, int n, BoolFun f, int* res) {
     if (i == n) {
-        if ((*f)(x)) *res += 1;
+        if ((*f)(x)) {
+            *res = *res + 1;
+        }
     } else {
         x[i] = 0;
         gen(x, i + 1, n, f, res);
@@ -23,7 +25,7 @@ void gen(int *x, int i, int n, BoolFun f, int *res) {
 
 void *multi_thread(void *ptr) {
     Args *a = ptr;
-    gen(a->array_pointer, 3, a->n, a->f, a->res);
+    gen(a->array_pointer, 3, a->n, a->f, &(a->res));
     free(a->array_pointer);
     return NULL;
 }
@@ -50,7 +52,7 @@ int recuento(int n, BoolFun f) {
     }
     int first[3] = {0,0,0};
     combinar(first, 0, 3, array, p);
-    pthread_t t[7];
+    pthread_t t[8];
     Args argumentos[8];
 
     for (int x = 0; x < 8; x++) {
@@ -60,21 +62,22 @@ int recuento(int n, BoolFun f) {
 
     }
     free(array);
-    int res[8] = {0, 0, 0, 0, 0, 0, 0, 0};
 
-    for (int x = 0; x < 7; x++) {
+    for (int x = 0; x < 8; x++) {
         Args *arg = &argumentos[x];
         arg->n = n;
         arg->f = f;
-        arg->res = &res[x];
+        arg->res = 0;
         pthread_create(&t[x], NULL, multi_thread, arg);
     }
-    Args *a = &argumentos[7];
-    gen(a->array_pointer, 3, n,f, &res[7]);
-    for (int x = 0; x < 7; x++) {
+    for (int x = 0; x < 8; x++) {
         pthread_join(t[x], NULL);
     }
+    int resultado = 0;
 
-    return res[0] + res[1] + res[2] + res[3] + res[4] + res[5] + res[6] + res[7];
+    for (int x = 0; x < 8; x++) {
+        Args *arg = &argumentos[x];
+        resultado += arg->res;
+    }
+    return resultado;
 }
- 
