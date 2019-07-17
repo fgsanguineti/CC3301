@@ -1,3 +1,5 @@
+typedef unsigned long long Set;
+
 struct Param{
 	int a[];
 	int n;
