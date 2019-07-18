@@ -1,5 +1,7 @@
 # CC3301 - Programación de Software de Sistemas - Universidad de Chile - 2019-1
 
+La mayoría del material de este repositorio está basado en los apuntes y las clases elaboradas por el profesor Luis Mateu. Todo este material es público y puede encontrarse en la [página del curso](https://users.dcc.uchile.cl/~lmateu/CC3301/)
+
 ## Tareas
 
 En esta sección se encuentran disponibles todas las tareas del semestre Otoño 2019. Las cuatro tareas fueron programadas en su completitud por mi y compilan sin problemas, siempre y cuando se incluyan los archivos de compilación proporcionados por el curso. Las cuatro tareas funcionaron según lo solicitado y fueron calificadas con todo el puntaje.
