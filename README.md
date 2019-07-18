@@ -1,6 +1,10 @@
 # CC3301 - Programación de Software de Sistemas - Universidad de Chile - 2019-1
 
-La mayoría del material de este repositorio está basado en los apuntes y las clases elaboradas por el profesor Luis Mateu. Todo este material es público y puede encontrarse en la [página del curso](https://users.dcc.uchile.cl/~lmateu/CC3301/)
+La mayoría del material de este repositorio está basado en los apuntes y las clases elaboradas por el profesor Luis Mateu. Dicho material es público y puede encontrarse en la [página del curso](https://users.dcc.uchile.cl/~lmateu/CC3301/).
+
+## Ejercicios
+
+Los ejercicios de esta sección son los clásicos ejercicios que se recomiendan hacer antes del control. Están sólo disponibles los del primer Control y las soluciones fueron programadas por mi.
 
 ## Tareas
 
@@ -21,11 +25,7 @@ Se encuentran disponibles las soluciones de la pauta del control, con algunos mu
 ### Control 3
 Sólo está disponible la pregunta 1 referente a procesos pesados. La solución es la que programé yo durante el control y es correcta. Se encuentra disponible también el enunciado. 
 
-## Ejercicios
-
-Los ejercicios de esta sección son los clásicos ejercicios que se recomiendan hacer antes del control. Están sólo disponibles los del primer Control y las soluciones fueron programadas por mi.
-
 ## Autor
 
-F. Giovanni Sanguineti, estudiante del Departamento de Ciencias de la Computación (DCC), Universidad de Chile. - [git repo](https://github.com/sanguineti/)
+* **F. Giovanni Sanguineti** - *Universidad de Chile* - [git repo](https://github.com/sanguineti/)
 
