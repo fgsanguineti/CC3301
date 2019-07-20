@@ -1,6 +1,7 @@
 # CC3301 - Programación de Software de Sistemas - Universidad de Chile - 2019-1
 
 La mayoría del material de este repositorio está basado en los apuntes y las clases elaboradas por el profesor Luis Mateu. Dicho material es público y puede encontrarse en la [página del curso](https://users.dcc.uchile.cl/~lmateu/CC3301/).
+Si quieres colaborar agregando material faltante del semestre 2019-1 o de cualquier otro semestre, favor contáctame por [email](mailto:franco.sanguineti@ug.uchile.cl).
 
 ## Ejercicios
 
