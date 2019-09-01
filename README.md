@@ -24,6 +24,9 @@ Se encuentran disponibles las soluciones de la pauta del control, con algunos mu
 ### Control 3
 Sólo está disponible la pregunta 1 referente a procesos pesados. La solución es la que programé yo durante el control y es correcta. Se encuentra disponible también el enunciado. 
 
+### Examen
+Está disponible el enunciado. Espero programar las soluciones más adelante.
+
 ## Autor
 
 * **F. Giovanni Sanguineti** - *Universidad de Chile* - [git repo](https://github.com/sanguineti/)
